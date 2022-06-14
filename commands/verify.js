@@ -20,6 +20,9 @@ module.exports = {
         const verifiedRole = interaction.guild.roles.cache.get(verified);
         const unverifiedRole = interaction.guild.roles.cache.get(unverified);
 
+        member.roles.add(verifiedRole);
+        member.roles.remove(unverifiedRole);
+
         const welcomeEmbed = new MessageEmbed()
         .setColor('#2F3136')
         .setTitle(`Welcome To ${interaction.guild.name} `)
