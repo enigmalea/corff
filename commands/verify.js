@@ -1,6 +1,6 @@
 const { SlashCommandBuilder } = require('@discordjs/builders');
 const { MessageEmbed } = require('discord.js');
-const { PermissionFlagsBits } = require('discord-api-types/v10')
+const { PermissionFlagsBits } = require('discord-api-types/v10');
 const { ambassadors, welcome, general, unverified, verified } = require('../config.json');
 
 module.exports = {
