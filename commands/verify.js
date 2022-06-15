@@ -16,7 +16,7 @@ module.exports = {
         const member = interaction.options.getMentionable('member');
         const welcomeChannel = interaction.guild.channels.cache.get(welcome);
         const generalChannel = interaction.guild.channels.cache.get(general);
-        const ambassadorsRole = interaction.guild.roles.cache.get(ambassadors)
+        const ambassadorsRole = interaction.guild.roles.cache.get(ambassadors);
         const verifiedRole = interaction.guild.roles.cache.get(verified);
         const unverifiedRole = interaction.guild.roles.cache.get(unverified);
 
