@@ -11,11 +11,12 @@ module.exports = {
         .setDescription("Mention the member.")
         .setRequired(true)
     )
-    .setDefaultMemberPermissions(PermissionFlagsBits.ManageRoles),
+    .setDefaultMemberPermissions(PermissionFlagsBits.ManageRoles)
+    .setDMPermission(false),
 
   async execute(interaction) {
     const member = interaction.options.getMentionable("member");
-    interaction.channel.send(
+    interaction.reply(
       `${member} please be sure to submit your verification request by using the form above!`
     );
   },

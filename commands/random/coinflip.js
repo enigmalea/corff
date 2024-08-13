@@ -9,6 +9,6 @@ module.exports = {
     const coin = ["Heads", "Tails"];
     const coinFlip = Math.floor(Math.random() * coin.length).toString();
 
-    interaction.channel.send(`${coin[coinFlip]}`);
+    interaction.reply(`${coin[coinFlip]}`);
   },
 };

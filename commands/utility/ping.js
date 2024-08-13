@@ -6,6 +6,6 @@ module.exports = {
     .setDescription("Replies with Pong!"),
   async execute(interaction) {
     const botName = interaction.client.user.username;
-    await interaction.reply(`My name is ${botName}`);
+    await interaction.reply(`Ping! My name is ${botName}`);
   },
 };
